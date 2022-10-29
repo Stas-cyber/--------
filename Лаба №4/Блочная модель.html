@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блочная модель</title>
+    <style>
+        .block {
+            display: inline-block;   
+            width: 100px;
+            height: 100px;
+            border: solid 5px rgb(0, 0, 0);
+            margin: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .block  p {
+            margin: 40%;
+        }
+        span {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            background-color: #FFA500;
+            border: solid 5px #FF4500;
+        }
+
+        .p1 {
+            width: 400px;
+            text-align: center;
+            border: solid 5px #FF7F50;
+        }
+
+        .p2 {
+            border: solid 5px red;
+            border-radius: 20px/40px;
+            box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+        }
+
+        .p3 {
+            border: solid 5px #FF6347;
+        }
+
+        .bl1 {
+            border: 5px solid rgb(255, 0, 0);
+        }
+
+        .bl2 {
+            border: 5px dashed rgb(11, 174, 11);
+        }
+
+        .bl3 {
+            border: 5px dotted rgb(0, 0, 255);
+        }
+
+        .bl4 {
+            border: 5px double rgb(0, 191, 255);
+        }
+
+        .bl5 {
+            border: 5px ridge rgb(128, 0, 128);
+        }
+
+        .bl6 {
+            border: 5px inset rgb(255, 255, 0);
+        }
+
+        .bl7 {
+            border: 5px outset rgb(0, 0, 0);
+        }
+        .v14 {
+            border: 5px dotted rgb(255, 0, 0);
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="block bl1">
+       <p>R</p>
+    </div>
+    <div class="block bl2"><p>G</p></div>
+    <div class="block bl3"><p>B</p></div>
+    <div class="block bl4"><p>C</p></div>
+    <div class="block bl5"><p>M</p></div>
+    <div class="block bl6"><p>Y</p></div>
+    <div class="block bl7"><p>K</p></div>
+    <p class="p1">
+        <span>
+            Существует миф, что один лист бумаги нельзя сложить более семи раз так, чтобы линия каждого последующего
+            изгиба была перпендикулярна линии предыдущего изгиба. Однако это не правда.
+        </span>
+    </p>
+    <p class="p2">
+        
+            Нет никаких фундаментальных законов физики, <span>которые</span> бы запрещали сложить лист бумаги подобным образом в
+            восьмой и последующие разы. Однако для этого понадобится очень много бумаги. Дело в том, что при каждом
+            таком складывании листа бумаги его толщина удваивается
+    
+    </p>
+    <p class="p3">
+        <span>
+            Поэтому, если принять начальную толщину листа бумаги за 0,1 мм = 0,0001 метр (а это абсолютно реалистично),
+            то можно записать такую формулу для толщины (H) сложенного листа бумаги после N складываний:
+        </span>
+    </p>
+
+    <div class="v14">H = 0,0001∙2 <sup>N</sup> метров</div>
+</body>
+
+</html>

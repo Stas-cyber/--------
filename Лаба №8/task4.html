@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+    <style>
+        * {
+            font-family: Arial, serif;
+        }
+        body {
+            background-color: rgb(34, 227, 150);
+        }
+        .container {
+            text-align: center;
+        }
+
+        .container>div {
+            display: inline-block;
+            width: 240px;
+            height: 30px;
+            border: 2px solid #000;
+            background-color: aqua;
+        }
+
+        a {
+            display: block;
+            width: 240px;
+            height: 30px;
+            text-decoration: none;
+            color: #000;
+            text-align: center;
+
+        }
+
+        .menu-content {
+            display: none;
+            position: absolute;
+            margin-left: -2px;
+            width: 240px;
+            height: auto;
+            border-style: none solid solid solid;
+            border: 0px 1px 1px 1px;
+            border-color: none black black black;
+            z-index: 1; 
+            background-color: aqua;
+        }
+        .menu-content a {
+            width: 240px;
+            text-decoration: none;
+            border-top: 2px solid black;
+            display: block;
+        }
+
+        .menu1:hover .BSTU {
+            background: url(img/facultet.png) no-repeat 0 0;
+        }
+
+        .menu1:hover .menu-content {
+            display: block;
+        }
+
+        .menu2:hover .FIT {
+            background: url(img/facultet.png) no-repeat 0 -30px;
+        }
+        .menu2:hover .menu-content {
+            display: block;
+        }
+        .menu3:hover .HTiT {
+            background: url(img/facultet.png) no-repeat 0 -60px;
+        }
+
+        .menu4:hover .PiM {
+            background: url(img/facultet.png) no-repeat 0 -90px;
+        }
+        .menu4:hover .menu-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu1">
+            <a class="BSTU" href="https://www.belstu.by/">БГТУ</a>
+            <div class="menu-content">
+                <a href="#">ЛХФ</a>
+                <a href="#">ЛИД</a>
+                <a href="#">ТОВ</a>
+                <a href="#">ХТиТ</a>
+                <a href="#">ПиМ</a>               
+                <a href="#">ИЭФ</a>                
+                <a href="#">ФИТ</a>                
+            </div>
+        </div>
+        <div class="menu2">
+            <a class="FIT" href="https://it.belstu.by/">ФИТ</a>
+            <div class="menu-content">
+                <a href="https://isit.belstu.by/">Кафедра ИСИТ</a>
+                <a href="">Кафедра ИиВД</a>
+                <a href="https://www.belstu.by/fakultety/fit/pi">Кафедра ПИ</a>
+            </div>
+        </div>
+        <div class="menu3">
+            <a class="HTiT" href="#">ХТиТ</a>
+        </div>
+        <div class="menu4">
+            <a class="PiM" href="#">ПиМ</a>
+            <div class="menu-content">
+                <a href="#">Кафедра БФ</a>
+                <a href="#">Кафедра ПП</a>
+                <a href="#">Кафедра РИТ</a>
+                <a href="#">Кафедра ПОиСОИ</a>
+                <a href="#">Кафедра МКиПТ</a>                              
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

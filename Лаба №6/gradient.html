@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(6, 120px);
+        }
+
+        body div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        .bl1 {
+
+            background-image: linear-gradient(to bottom, red, blue);
+        }
+
+        .bl2 {
+            background: repeating-linear-gradient(45deg, red, red 10px, blue 10px, blue 20px);
+        }
+
+        .bl3 {
+            background-image: radial-gradient(circle at 50% 50%, yellow, green);
+        }
+        .bl4 {
+            background: repeating-radial-gradient(circle, green, green 5px, yellow 5px, yellow 10px);  
+        }
+        .bl5 {
+            background-image: 
+            radial-gradient(circle at 50% 50%, rgb(255, 255, 0) 5%, rgba(26, 145, 26, 0) 80%),
+            radial-gradient(circle at 50% 50%, rgb(11, 199, 11) 50%, rgba(26, 145, 26, 0)), 
+            linear-gradient(to bottom, blue, rgb(225, 0, 255));
+        }
+        .bl6 { 
+            background-image: linear-gradient(to right, yellow, green, rgba(255, 255, 255, 0) 80%),
+            linear-gradient(to bottom, black, white 70%, rgba(255, 255, 255, 0)),
+            linear-gradient(to  top, rgb(225, 0, 255)10%, blue 15%, white);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bl1"></div>
+    <div class="bl2"></div>
+    <div class="bl3"></div>
+    <div class="bl4"></div>
+    <div class="bl5"></div>
+    <div class="bl6"></div>
+</body>
+
+</html>
