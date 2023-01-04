@@ -1,0 +1,196 @@
+@import "variable.scss";
+
+body {
+    background-color: aqua;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: $grid;
+    grid-template-columns: 30% 70%;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin: $px10;
+}
+
+.header-imgs {
+    width: 250px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+nav {
+    display: $grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+    div {
+        border: 2px solid #000;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+    }
+}
+
+@mixin grid {
+    display: $grid;
+    grid-gap: $px10;
+}
+
+@mixin margin {
+    margin: 0;
+}
+
+@mixin elemCenter {
+    justify-self: center;
+}
+
+@function sizeH-P() {
+    @return $font-size-h * 0.75;
+}
+
+@function funIf() {
+    @if 11>10 {
+        @return $font-size-h * 0.5;
+    }
+}
+
+main {
+    @include grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    height: 80%;
+    background-color: rgb(27, 225, 218);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px
+}
+
+.container-left {
+    @include grid;
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.3fr;
+
+    h2 {
+        margin: 0 auto;
+        font-size: $font-size-h;
+    }
+
+    .texts {
+        @include grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        p {
+            @include margin;
+            font-size: sizeH-P();
+        }
+    }
+
+    h3 {
+        @include margin;
+        text-align: center;
+        font-size: $font-size-h;
+    }
+
+    .main-imgs-bl {
+        margin: 0 auto;
+        height: auto;
+
+        img {
+            width: 256px;
+            height: 120px;
+        }
+    }
+}
+
+.container-right {
+    form {
+        display: $grid;
+        grid-template-rows: 10% 25% 25% 25% 15%;
+        background-color: aquamarine;
+        border-radius: 20px;
+        margin: $px10;
+        padding: 5px;
+
+        h3 {
+            @include margin;
+            @include elemCenter;
+        }
+
+        .password {
+            align-self: start;
+        }
+
+        p {
+            margin-left: 10%;
+            justify-self: start;
+
+            input {
+                border: none;
+
+            }
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            border: none;
+            border-radius: $px10;
+            background-color: rgb(14, 248, 170);
+            @include elemCenter;
+        }
+
+        a {
+            @include elemCenter;
+            font-size: funIf();
+        }
+    }
+
+    .bl-text-img {
+        display: $grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 7px;
+
+        img {
+            width: 110px;
+            height: 60px;
+        }
+
+        p {
+            @include margin;
+        }
+    }
+}
+
+footer {
+    display: $grid;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin: $px10;
+
+    p {
+        @include margin;
+    }
+}
+
+// v12
+$size : 20px;
+.headd {
+    p {
+        font-size: 16px;
+    }
+    .parag {
+        font-size: $size;
+
+        @if $size == 20px {
+            color: red;
+        }
+    }
+    
+}
+// v16

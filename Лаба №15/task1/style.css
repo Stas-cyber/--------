@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.galery {
+    width: 50%;
+    margin: auto;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 20px;
+}
+
+img {
+    width: 128px;
+    height: 128px;
+}
+figcaption {
+    text-align: center;
+}
+.img4 {
+    display: none;
+}

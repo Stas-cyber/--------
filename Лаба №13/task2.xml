@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="task2.xsl"?>
+<catalog>
+   <cd>
+     <title>Розель Станислав</title>
+      <mark>9</mark>
+   </cd>
+   <cd>
+    <title>Ляшонок Матвей</title>
+      <mark>9</mark>
+   </cd>
+   <cd>
+     <title>Шимко Алексей</title>
+      <mark>9</mark>
+   </cd>
+   <cd>
+     <title>Угляница Михаил</title>
+      <mark>2</mark>
+   </cd>
+   <cd>
+     <title>Костюченко Владислав</title>
+      <mark>7</mark>
+   </cd>
+   <cd>
+     <title>Буйко Максим</title>
+      <mark>5</mark>
+   </cd>
+</catalog>

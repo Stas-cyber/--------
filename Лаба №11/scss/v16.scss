@@ -1,0 +1,20 @@
+$size : 20px;
+$footer-size : 15px;
+$family : Arial;
+body {
+    background-color: aquamarine;
+}
+.h1-v16 {
+    font-size: $size + 20px;
+    text-align: center;
+}
+.m-v16 {
+    p {
+        font-family: $family;
+        font-size: $size;
+    }
+}
+.f-v16 {
+    font-size: $footer-size + 5px;
+    text-align: center;
+}

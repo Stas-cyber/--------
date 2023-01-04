@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        body {
+            background-color: #FFF26D;
+        }
+        .flex-cont-header {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+
+        h2 {
+            text-align: center;
+            flex-basis: 100%;
+            border: 2px solid black;
+            background-color: #9797EE;
+        }
+
+        .flex-block {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .elem1 {
+            border: 2px solid black;
+            flex-basis: 25%;
+            text-align: center;
+            background-color: #9595e4;
+        }
+
+        .elem2 {
+            border: 2px solid black;
+            flex-basis: 40%;
+            text-align: center;
+            background-color: #FFE491;
+        }
+
+        .elem3 {
+            border: 2px solid black;
+            flex-basis: 25%;
+            text-align: center;
+            background-color: #9595e4;
+        }
+
+        video {
+            width: 220px;
+            height: 120px;
+        }
+        audio {
+            margin: 10px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: #FFF591;
+            width: 20%;
+        }
+
+        input,
+        label {
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+
+
+            .flex-block {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .elem1 {
+                flex-basis: 100%;
+                height: auto;
+                margin: 5px;
+                text-align: center;
+            }
+
+            .elem2 {
+
+                flex-basis: 100%;
+                height: auto;
+                margin: 5px;
+            }
+
+            .elem3 {
+                text-align: center;
+                flex-basis: 100%;
+                height: auto;
+                margin: 5px;
+            }
+
+            .block {
+                display: none;
+            }
+
+            li {
+                display: block;
+                background-color: #FFF591;
+                width: 20%;
+                margin-bottom: 2px;
+            }
+
+            label {
+                width: 120px;
+                height: 90px;
+                font-size: 100px;
+                text-align: left;
+                display: block;
+                margin: 10px;
+            }
+
+            input[type="checkbox"]:checked~.block {
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <label for="burger-menu">&#8801;</label>
+        <input type="checkbox" name="" id="burger-menu">
+        <div class="block">
+            <ul>
+                <li>Ячейка 1</li>
+                <li>Ячейка 2</li>
+                <li>Ячейка 3</li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex-cont-header">
+        <h2> Flexbox</h2>
+    </div>
+    <div class="flex-block">
+        <div class="elem1">
+            <video controls src="video/video1.mp4"></video>
+            <video controls src="video/video2.mp4"></video>
+            <video controls src="video/video3.mp4"></video>
+        </div>
+        <div class="elem2">
+            CSS Flexbox предназначен для создания гибких макетов. С помощью этой технологии можно очень просто и
+            гибко
+            расставить элементы в контейнере, распределить доступное пространство между ними, и выровнять их тем или
+            иным способом даже если они не имеют конкретных размеров.
+
+            CSS Flexbox позволяет создать адаптивный дизайн намного проще, чем с использованием Float и
+            позиционирования.
+
+            Flexbox можно использовать как для CSS разметки целой страницы, так и её отдельных блоков.
+        </div>
+        <div class="elem3">
+            <audio controls src="audio/audio1.mp3">audio</audio>
+            <audio controls src="audio/audio2.mp3">audio</audio>
+            <audio controls src="audio/audio3.mp3">audio</audio>
+        </div>
+    </div>
+</body>
+
+</html>

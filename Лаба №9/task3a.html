@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 15% 70% 14%;
+            grid-template-rows: 50px 600px 50px;
+            grid-template-areas:
+                "nav header header"
+                "nav article aside"
+                "footer footer footer";
+            grid-gap: 10px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: aqua;
+        }
+
+        header {
+            grid-area: header;
+            background-color: aqua;
+            text-align: center;
+            font-size: 18pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+        article {
+            grid-area: article;
+            background-color: aqua;
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: aqua;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: aqua;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            margin: 10px;
+            text-align: center;
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        p {
+            margin: 10px;
+            text-align: center;
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="http://htmlbook.ru/html5">HTML5</a>
+            <a href="https://html5book.ru/css-css3/">CSS3</a>
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Grid</a>
+        </nav>
+        <header>HTML5 & CSS3 & Grid</header>
+        <article>HTML — это язык для структурирования и представления содержимого, HTML5 (HyperText Markup Language,
+            version 5) — это пятая версия стандарта, которая ещё находится в разработке, но уже является вполне рабочей.
+            Цель разработки HTML5 — улучшение уровня поддержки мультимедиа-технологий при сохранении удобочитаемости
+            кода для человека и простоты анализа для парсеров (в частности, поисковых систем).
+            Словарь HTML состоит из множества тегов. Все они записаны в стандарт, который поддерживает международная
+            организация World Wide Web Consortium (Консорциум W3C). Последняя рекомендация W3C для языка HTML имеет
+            номер версии 5.2. В документе перечислены все элементы, которые можно использовать в коде веб-страницы. Это
+            большой словарь, к которому придётся часто обращаться.
+
+            Конечно, современные браузеры отлично покажут документ независимо от того, в каком стиле оформлен код HTML,
+            но вам будет стыдно перед коллегами, которые заглянут в исходники.
+        </article>
+        <aside>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Grid</p>
+        </aside>
+        <footer>Розель Станислав Минск 2022<a href="task3b.html">Следущая страница</a></footer>
+    </div>
+
+</body>
+
+</html>

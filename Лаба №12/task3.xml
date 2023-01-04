@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="forXML.css"?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema">
+<xs:element name="info">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="text1" type="xs:string"/>
+<xs:element name="text2" type="xs:string"/>
+<xs:element name="text3" type="xs:string"/>
+<xs:element name="header" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

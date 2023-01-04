@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+    <style>
+        #rect1 { fill: url(#Gradient1); }
+        .stop1 { stop-color: green; }
+        .stop2 { stop-color: orange ; }
+    </style>
+</head>
+
+<body>
+    <svg width="1280" height="256" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="gradient">
+                <stop class="stop1" offset="0%"/>
+                <stop class="stop2" offset="100%"/>
+              </linearGradient>
+
+            <linearGradient id="linear-gradient" x1="0" y1="0" x2="100%" y2="0" >
+                <stop offset="0" stop-color="green">
+                   <animate attributeName="stop-color"  dur="2s" repeatCount="indefinite"  /> 
+                </stop>
+                <stop offset="1" stop-color="orange">
+                    <animate attributeName="stop-color"  dur="2s" repeatCount="indefinite"  /> 
+                </stop>
+            </linearGradient>
+
+        </defs>
+        <polygon points="100 50 30 150 180 150" fill="url(#gradient)">
+            <animate   attributeName="fill" from="yellow" to="(#gradient)" dur="3s" repeatCount="indefinite" /> 
+        </polygon>
+        <rect x="200" y="60" rx="0" ry="0" width="150" height="90" stroke-width="5" fill="red">
+            <animate attributeName="stroke" from="white" to="black" dur="3s" repeatCount="indefinite" />
+        </rect>
+
+        <ellipse cx="450" cy="110" rx="90" ry="50" fill="green">
+            <animate attributeName="fill" begin="click" from="green" to="blue" dur="3s" />
+        </ellipse>
+        <polygon points="600 50 530 150 680 150" fill="yellow" stroke-width="5">
+            <animate attributeName="stroke" begin="mouseover" from="yellow" to="green" dur="3s" end="mouseout" />
+        </polygon>
+
+    </svg>
+</body>
+
+</html>

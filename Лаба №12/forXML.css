@@ -1,0 +1,14 @@
+info {
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    display: grid;
+    justify-items: center; 
+    font-size: 30px;
+    font-weight: bold;
+}
+text1, text2, text3 {
+    display: block;
+    font-size: 20px;
+}

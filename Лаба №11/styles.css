@@ -1,0 +1,137 @@
+body {
+  background-color: aqua;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: aquamarine;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.header-imgs {
+  width: 250px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+nav div {
+  border: 2px solid #000;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 0.8fr 0.2fr;
+  height: 80%;
+  background-color: rgb(27, 225, 218);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container-left {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 0.1fr 1fr 0.1fr 0.3fr;
+}
+.container-left h2 {
+  margin: 0 auto;
+  font-size: 25px;
+}
+.container-left .texts {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container-left .texts p {
+  margin: 0;
+  font-size: 18.75px;
+}
+.container-left h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+}
+.container-left .main-imgs-bl {
+  margin: 0 auto;
+  height: auto;
+}
+.container-left .main-imgs-bl img {
+  width: 256px;
+  height: 120px;
+}
+
+.container-right form {
+  display: grid;
+  grid-template-rows: 10% 25% 25% 25% 15%;
+  background-color: aquamarine;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 5px;
+}
+.container-right form h3 {
+  margin: 0;
+  justify-self: center;
+}
+.container-right form .password {
+  align-self: start;
+}
+.container-right form p {
+  margin-left: 10%;
+  justify-self: start;
+}
+.container-right form p input {
+  border: none;
+}
+.container-right form button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(14, 248, 170);
+  justify-self: center;
+}
+.container-right form a {
+  justify-self: center;
+  font-size: 12.5px;
+}
+.container-right .bl-text-img {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 7px;
+}
+.container-right .bl-text-img img {
+  width: 110px;
+  height: 60px;
+}
+.container-right .bl-text-img p {
+  margin: 0;
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 50px;
+  background-color: aquamarine;
+  border-radius: 20px;
+  margin: 10px;
+}
+footer p {
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */

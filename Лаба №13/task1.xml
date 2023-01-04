@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="task1.xsl"?>
+
+
+<sort>
+<element>
+<number>1</number>
+<letter>А</letter>
+</element>
+<element>
+<number>2</number>
+<letter>Б</letter>
+</element>
+<element>
+<number>3</number>
+<letter>В</letter>
+</element>
+<element>
+<number>4</number>
+<letter>Г</letter>
+</element>
+<element>
+<number>5</number>
+<letter>Д</letter>
+</element>
+</sort>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <style>
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 15% 70% 14%;
+            grid-template-rows: 50px 600px 50px;
+            grid-template-areas:
+                "header header header"
+                "nav article aside"
+                "footer footer footer";
+            grid-gap: 10px;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: aqua;
+        }
+
+        header {
+            grid-area: header;
+            background-color: aqua;
+            text-align: center;
+            font-size: 18pt;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+        article {
+            grid-area: article;
+            background-color: aqua;
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: aqua;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: aqua;
+            text-align: center;
+        }
+        a {
+            display: block;
+            margin: 10px;
+            text-align: center;
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        p {
+            margin: 10px;
+            text-align: center;
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="http://htmlbook.ru/html5">HTML5</a>
+            <a href="https://html5book.ru/css-css3/">CSS3</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Grid</a>
+        </nav>
+        <header>HTML5 & CSS3 & Grid</header>
+        <article>W3C описывает модуль CSS Grid Layout как систему двумерного макета, оптимизированного для дизайна
+            пользовательского интерфейса. Главная идея, лежащая в основе макета сетки, заключается в разделении
+            веб-страницы на столбцы и строки. В образовавшиеся области сетки можно помещать элементы сетки, а управлять
+            их размерами и расположением можно с помощью специальных свойств модуля.
+
+            Кроме того, благодаря своей способности явно размещать элементы в сетке, Grid Layout позволяет кардинально
+            преобразовывать структуру визуального макета (отображаемого на экране), не требуя соответствующих изменений
+            разметки.
+
+            Хотя многие макеты могут быть отображены с помощью Grid или Flexbox, у каждого есть свои особенности. Grid
+            обеспечивает двухмерное выравнивание, использует нисходящий подход к макету, допускает явное перекрытие
+            элементов и обладает более мощными связующими возможностями. Flexbox фокусируется на распределении
+            пространства по оси, использует более простой восходящий подход к макету, может использовать систему
+            переноса строк на основе размера контента для управления своей вторичной осью и опирается на базовую
+            иерархию разметки для построения более сложных макетов.
+
+            Во всех примерах будет рассмотрен стандартный синтаксис. Если вы захотите адаптировать синтаксис для IE10-11
+            и Microsoft Edge, воспользуйтесь руководством Microsoft Developer Network Grid layout.
+
+            Список текущих багов и неполных реализаций приведен в статье Rachel Andrew GridBugs.</article>
+        <aside>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Grid</p>
+        </aside>
+        <footer>Розель Станислав Минск 2022 <a href="task3a.html">Назад</a></footer>
+    </div>
+    
+</body>
+
+</html>
